@@ -6,6 +6,7 @@ import ContactView from "@/views/ContactView.vue";
 import BlogView from "@/views/BlogView.vue";
 import PostView from "@/views/PostView.vue";
 import LoginView from "@/views/LoginView.vue";
+import TagsView from "@/views/TagsView.vue";
 
 const routes = [
     {
@@ -26,7 +27,10 @@ const routes = [
     {
         path:'/blog',
         name:'Blog',
-        component: BlogView
+        components:{
+            default: BlogView,
+            sidebar: TagsView
+        }
     },
     {
         path:'/post/:id',

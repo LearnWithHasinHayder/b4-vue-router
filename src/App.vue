@@ -57,6 +57,9 @@ const logout = () => {
     <main class="w-full min-h-screen p-5 prose">
       <RouterView />
     </main>
+
+    <!-- named router view -->
+    <RouterView name="sidebar" class="w-[450px] bg-black text-white p-5"></RouterView>
   </section>
   <footer></footer>
 
